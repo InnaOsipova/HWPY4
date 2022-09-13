@@ -4,7 +4,7 @@
 def is_prime(n):
     if n == 1:
         return False
-    for i in range(2, n): # начинаем с 2, так как на 1 все делится; n не включается
+    for i in range(2, n):
         if n % i == 0:
             return False
     return True
