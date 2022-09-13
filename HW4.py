@@ -6,8 +6,8 @@
 import random as r
 def form_funk (num, some_str):
     if num == 1:
-        a = r.randint(0, 10)
-        b = r.randint(0, 10)
+        a = r.randint(0, 100)
+        b = r.randint(0, 100)
         if a == 1:
             some_str += 'x+' + str (b)
         if a == 1 and b == 0:
@@ -20,7 +20,7 @@ def form_funk (num, some_str):
             return some_str
         return some_str
     else:
-        a = r.randint(0, 10)
+        a = r.randint(0, 100)
         if a == 1:
             some_str += 'x' + '^' + str(num) + '+' + form_funk(num-1, some_str)
         if a == 0:
