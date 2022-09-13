@@ -27,6 +27,7 @@ with open ("text2.txt", "r") as f2:
     m2=[]
     for i in range(len(n2)):
         m2.append (int(''.join(map(str, n2[i].split('x')[:1]))))
-
+with open ("text3.txt", "w") as f3:
+    f3.write(str(np.poly1d(np.polyadd(m1, m2))))
 p = np.poly1d(np.polyadd(m1, m2))
 print(p)
